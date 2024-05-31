@@ -7,12 +7,8 @@ file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
 
-set(BOOST_INCLUDE_LIBRARIES thread filesystem system program_options asio date_time)
-set(BOOST_ENABLE_CMAKE ON)
+add_executable(${PROJECT_NAME} src/Main.cpp)
 
-# Boost ASIO
-find_package(Boost 1.83.0 REQUIRED system)
-target_include_directories(${PROJECT_NAME} PUBLIC ${BOOST_INCLUDE_DIRS})
-target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+find_package(Boost COMPONENTS program_options regex filesystem REQUIRED)
+target_link_libraries(${PROJECT_NAME} Boost::program_options Boost::regex Boost::filesystem)

@@ -1,2 +1,4 @@
 # ninja log v6
 1	387	1717155612005856200	CMakeFiles/server.dir/src/Main.cpp.o	7a17c2a10bbaf66d
+6	3576	1717161428346896837	CMakeFiles/AtomServer.dir/src/Main.cpp.o	5d77e2e8f1a9d1d0
+3576	3712	1717161431916909640	AtomServer	2b80e68e1c5f11d5
