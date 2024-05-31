@@ -1,0 +1,3 @@
+/home/sheep/github/AtomServer-cpp/build/CMakeFiles/server.dir
+/home/sheep/github/AtomServer-cpp/build/CMakeFiles/edit_cache.dir
+/home/sheep/github/AtomServer-cpp/build/CMakeFiles/rebuild_cache.dir

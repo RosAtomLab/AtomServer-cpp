@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/home/sheep/github/AtomServer-cpp/build",
+  "command": "/usr/bin/c++ -g -o CMakeFiles/server.dir/src/Main.cpp.o -c /home/sheep/github/AtomServer-cpp/src/Main.cpp",
+  "file": "/home/sheep/github/AtomServer-cpp/src/Main.cpp",
+  "output": "CMakeFiles/server.dir/src/Main.cpp.o"
+}
+]
