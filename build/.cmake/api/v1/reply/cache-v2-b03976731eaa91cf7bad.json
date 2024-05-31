@@ -66,6 +66,18 @@
 			"value" : "/usr/include"
 		},
 		{
+			"name" : "Boost_SYSTEM_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "STRING",
+			"value" : "/usr/lib/libboost_system.so.1.83.0"
+		},
+		{
 			"name" : "CMAKE_ADDR2LINE",
 			"properties" : 
 			[
@@ -1215,7 +1227,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/cmake/Boost-1.83.0/BoostConfig.cmake][c ][v1.83.0()]"
+			"value" : "[/usr/lib/cmake/Boost-1.83.0/BoostConfig.cmake][cfound components: system ][v1.83.0(1.83.0)]"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1228,6 +1240,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "TRUE"
+		},
+		{
+			"name" : "boost_asio_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_asio."
+				}
+			],
+			"type" : "PATH",
+			"value" : "boost_asio_DIR-NOTFOUND"
 		},
 		{
 			"name" : "boost_headers_DIR",
@@ -1244,6 +1268,22 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/lib/cmake/boost_headers-1.83.0"
+		},
+		{
+			"name" : "boost_system_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for boost_system."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/cmake/boost_system-1.83.0"
 		}
 	],
 	"kind" : "cache",

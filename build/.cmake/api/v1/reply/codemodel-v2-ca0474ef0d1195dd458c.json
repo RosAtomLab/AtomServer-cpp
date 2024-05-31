@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-server-Debug-7365549ee2aa4a967b25.json",
-					"name" : "server",
+					"id" : "AtomServer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-AtomServer-Debug-878170de9d9e94f1b8cc.json",
+					"name" : "AtomServer",
 					"projectIndex" : 0
 				}
 			]

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "server"
+			"path" : "AtomServer"
 		}
 	],
 	"backtrace" : 1,
@@ -25,13 +25,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 8,
+				"line" : 10,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 12,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -42,10 +42,29 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-g -std=gnu++17"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_SYSTEM_DYN_LINK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "BOOST_SYSTEM_NO_LIB"
 				}
 			],
 			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "17"
+			},
 			"sourceIndexes" : 
 			[
 				1,
@@ -53,7 +72,7 @@
 			]
 		}
 	],
-	"id" : "server::@6890427a1f51a3e7e1df",
+	"id" : "AtomServer::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,14 +87,14 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "-lBoost",
+				"fragment" : "/usr/lib/libboost_system.so.1.83.0",
 				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
-	"name" : "server",
-	"nameOnDisk" : "server",
+	"name" : "AtomServer",
+	"nameOnDisk" : "AtomServer",
 	"paths" : 
 	{
 		"build" : ".",

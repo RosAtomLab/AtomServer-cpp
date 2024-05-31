@@ -1,3 +1,5 @@
+#pragma once
+
 using boost::asio::ip::udp;
 
 class VoxelServer{

@@ -41,42 +41,44 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/sheep/github/AtomServer-cpp/build/
 # =============================================================================
-# Object build statements for EXECUTABLE target server
+# Object build statements for EXECUTABLE target AtomServer
 
 
 #############################################
-# Order-only phony target for server
+# Order-only phony target for AtomServer
 
-build cmake_object_order_depends_target_server: phony || .
+build cmake_object_order_depends_target_AtomServer: phony || .
 
-build CMakeFiles/server.dir/src/Main.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/sheep/github/AtomServer-cpp/src/Main.cpp || cmake_object_order_depends_target_server
-  DEP_FILE = CMakeFiles/server.dir/src/Main.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/server.dir
-  OBJECT_FILE_DIR = CMakeFiles/server.dir/src
+build CMakeFiles/AtomServer.dir/src/Main.cpp.o: CXX_COMPILER__AtomServer_unscanned_Debug /home/sheep/github/AtomServer-cpp/src/Main.cpp || cmake_object_order_depends_target_AtomServer
+  DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
+  DEP_FILE = CMakeFiles/AtomServer.dir/src/Main.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles/AtomServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/AtomServer.dir/src
 
-build CMakeFiles/server.dir/src/Server.cpp.o: CXX_COMPILER__server_unscanned_Debug /home/sheep/github/AtomServer-cpp/src/Server.cpp || cmake_object_order_depends_target_server
-  DEP_FILE = CMakeFiles/server.dir/src/Server.cpp.o.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles/server.dir
-  OBJECT_FILE_DIR = CMakeFiles/server.dir/src
+build CMakeFiles/AtomServer.dir/src/Server.cpp.o: CXX_COMPILER__AtomServer_unscanned_Debug /home/sheep/github/AtomServer-cpp/src/Server.cpp || cmake_object_order_depends_target_AtomServer
+  DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
+  DEP_FILE = CMakeFiles/AtomServer.dir/src/Server.cpp.o.d
+  FLAGS = -g -std=gnu++17
+  OBJECT_DIR = CMakeFiles/AtomServer.dir
+  OBJECT_FILE_DIR = CMakeFiles/AtomServer.dir/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target server
+# Link build statements for EXECUTABLE target AtomServer
 
 
 #############################################
-# Link the executable server
+# Link the executable AtomServer
 
-build server: CXX_EXECUTABLE_LINKER__server_Debug CMakeFiles/server.dir/src/Main.cpp.o CMakeFiles/server.dir/src/Server.cpp.o
+build AtomServer: CXX_EXECUTABLE_LINKER__AtomServer_Debug CMakeFiles/AtomServer.dir/src/Main.cpp.o CMakeFiles/AtomServer.dir/src/Server.cpp.o | /usr/lib/libboost_system.so.1.83.0
   FLAGS = -g
-  LINK_LIBRARIES = -lBoost
-  OBJECT_DIR = CMakeFiles/server.dir
+  LINK_LIBRARIES = /usr/lib/libboost_system.so.1.83.0
+  OBJECT_DIR = CMakeFiles/AtomServer.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = server
-  TARGET_PDB = server.dbg
+  TARGET_FILE = AtomServer
+  TARGET_PDB = AtomServer.dbg
 
 
 #############################################
@@ -113,7 +115,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/sheep/github/AtomServer-cpp/build
 
-build all: phony server
+build all: phony AtomServer
 
 # =============================================================================
 # Built-in targets
@@ -122,14 +124,14 @@ build all: phony server
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/sheep/github/AtomServer-cpp/CMakeLists.txt /usr/lib/cmake/Boost-1.83.0/BoostConfig.cmake /usr/lib/cmake/Boost-1.83.0/BoostConfigVersion.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config-version.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeCXXCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/sheep/github/AtomServer-cpp/CMakeLists.txt /usr/lib/cmake/Boost-1.83.0/BoostConfig.cmake /usr/lib/cmake/Boost-1.83.0/BoostConfigVersion.cmake /usr/lib/cmake/BoostDetectToolset-1.83.0.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config-version.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config.cmake /usr/lib/cmake/boost_system-1.83.0/boost_system-config-version.cmake /usr/lib/cmake/boost_system-1.83.0/boost_system-config.cmake /usr/lib/cmake/boost_system-1.83.0/libboost_system-variant-shared.cmake /usr/lib/cmake/boost_system-1.83.0/libboost_system-variant-static.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeCXXCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/sheep/github/AtomServer-cpp/CMakeLists.txt /usr/lib/cmake/Boost-1.83.0/BoostConfig.cmake /usr/lib/cmake/Boost-1.83.0/BoostConfigVersion.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config-version.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeCXXCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake: phony
+build /home/sheep/github/AtomServer-cpp/CMakeLists.txt /usr/lib/cmake/Boost-1.83.0/BoostConfig.cmake /usr/lib/cmake/Boost-1.83.0/BoostConfigVersion.cmake /usr/lib/cmake/BoostDetectToolset-1.83.0.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config-version.cmake /usr/lib/cmake/boost_headers-1.83.0/boost_headers-config.cmake /usr/lib/cmake/boost_system-1.83.0/boost_system-config-version.cmake /usr/lib/cmake/boost_system-1.83.0/boost_system-config.cmake /usr/lib/cmake/boost_system-1.83.0/libboost_system-variant-shared.cmake /usr/lib/cmake/boost_system-1.83.0/libboost_system-variant-static.cmake /usr/share/cmake/Modules/CMakeCInformation.cmake /usr/share/cmake/Modules/CMakeCXXInformation.cmake /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake/Modules/CMakeGenericSystem.cmake /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake/Modules/CMakeLanguageInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake/Modules/Compiler/GNU-C.cmake /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake/Modules/Compiler/GNU.cmake /usr/share/cmake/Modules/FindBoost.cmake /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake/Modules/FindPackageMessage.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake/Modules/Platform/Linux-GNU.cmake /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake/Modules/Platform/Linux.cmake /usr/share/cmake/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.29.3/CMakeCCompiler.cmake CMakeFiles/3.29.3/CMakeCXXCompiler.cmake CMakeFiles/3.29.3/CMakeSystem.cmake: phony
 
 
 #############################################
